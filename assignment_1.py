@@ -31,7 +31,7 @@ def bfs(graph, visitedBFS, node):
     if notInVisited(node, visitedBFS) == False:
         visitedBFS.append(node)
         for i in graph:
-            for j in i:
+            for j in graph[i]:
                 bfs(graph, visitedBFS, j)
  
 def display(visited, graph): #this function will just displays the tree/graph and the result of the search algorithm
